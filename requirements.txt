@@ -20,3 +20,5 @@ pandas
 reportlab
 streamlit
 python-pptx
+spacy
+en-core-web-sm
