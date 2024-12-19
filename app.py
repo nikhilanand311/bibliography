@@ -12,6 +12,8 @@ import re
 import spacy
 from spacy.cli import download
 from transformers import pipeline, GPT2LMHeadModel, GPT2Tokenizer
+import streamlit as st
+
 
 # Function to ensure the SpaCy model is downloaded
 def ensure_spacy_model():
