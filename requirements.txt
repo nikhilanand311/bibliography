@@ -18,3 +18,5 @@ tensorflow
 
 pandas
 reportlab
+streamlit
+python-pptx
