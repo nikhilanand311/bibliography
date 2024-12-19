@@ -47,3 +47,5 @@ en-core-web-md==3.0.0  # This is a medium-sized model, you can use it instead of
 pandas==1.5.3
 transformers==4.24.0
 
+spacy==3.8.3
+en-core-web-md==3.0.0  # or use en-core-web-lg
