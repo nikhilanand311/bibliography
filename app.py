@@ -6,8 +6,7 @@ import io
 import docx
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
-from pptx import Presentation
-from pptx.util import Inches
+
 import pandas as pd
 import re
 import spacy
@@ -152,19 +151,6 @@ def download_pdf(content):
     c.drawText(text_object)
     c.showPage()
     c.save()
-    output_file.seek(0)
-    return output_file
-
-# Function to download as PowerPoint
-def download_ppt(content):
-    prs = Presentation()
-    slide = prs.slides.add_slide(prs.slide_layouts[1])
-    textbox = slide.shapes.add_textbox(left=Inches(1), top=Inches(1), width=Inches(8), height=Inches(5))
-    text_frame = textbox.text_frame
-    p = text_frame.add_paragraph()
-    p.text = content
-    output_file = io.BytesIO()
-    prs.save(output_file)
     output_file.seek(0)
     return output_file
 
