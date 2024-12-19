@@ -19,6 +19,6 @@ tensorflow
 pandas
 reportlab
 streamlit
-python-pptx
+python-pptx==0.6.21
 spacy
 en-core-web-sm
