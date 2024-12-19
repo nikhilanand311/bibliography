@@ -5,7 +5,6 @@ numpy
 requests
 urllib3
 boto3
-
 python-docx
 python-dotenv
 openai
@@ -15,5 +14,5 @@ spacy
 PyMuPDF
 Pillow
 tensorflow
-
 pandas
+streamlit
