@@ -20,5 +20,16 @@ pandas
 reportlab
 streamlit
 python-pptx==0.6.21
+
 spacy
 en-core-web-sm
+
+python-pptx==0.6.21
+spacy
+transformers
+pytesseract
+Pillow
+PyMuPDF
+reportlab
+pandas
+
