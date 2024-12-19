@@ -9,11 +9,11 @@ python-docx
 python-dotenv
 openai
 pytesseract
-transformers
+transformers==4.47.1
 spacy
 PyMuPDF
 Pillow
-tensorflow
+tensorflow==2.14.0
 pandas
 streamlit
 reportlab
