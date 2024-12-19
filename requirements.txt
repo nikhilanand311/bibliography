@@ -16,3 +16,4 @@ Pillow
 tensorflow
 pandas
 streamlit
+reportlab
