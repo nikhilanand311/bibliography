@@ -11,10 +11,22 @@ from pptx.util import Inches
 import pandas as pd
 import re
 import spacy
+from spacy.cli import download
 from transformers import pipeline, GPT2LMHeadModel, GPT2Tokenizer
 
+# Function to ensure the SpaCy model is downloaded
+def ensure_spacy_model():
+    try:
+        # Try loading the SpaCy model
+        nlp = spacy.load("en_core_web_sm")
+    except OSError:
+        # If not found, download it
+        download("en_core_web_sm")
+        nlp = spacy.load("en_core_web_sm")
+    return nlp
+
 # Initialize spaCy model
-nlp = spacy.load("en_core_web_sm")
+nlp = ensure_spacy_model()
 
 # Initialize GPT-2 text generation pipeline
 generator = pipeline("text-generation", model="gpt2")
