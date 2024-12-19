@@ -11,7 +11,7 @@ python-dotenv
 openai
 pytesseract
 transformers
-spacy
+
 PyMuPDF
 Pillow
 tensorflow
@@ -23,9 +23,9 @@ python-pptx==0.6.21
 
 spacy
 en-core-web-sm
-
+spacy>=3.0,<3.11
 python-pptx==0.6.21
-spacy
+
 transformers
 pytesseract
 Pillow
