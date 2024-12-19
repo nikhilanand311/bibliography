@@ -337,9 +337,6 @@ def main_page():
             elif download_format == "PDF":
                 pdf_file = download_pdf(format_bibliography_info(bibliography_info))
                 st.download_button("Download PDF File", pdf_file, file_name=f"{st.session_state['file_name']}.pdf")
-            elif download_format == "PowerPoint":
-                ppt_file = download_ppt(format_bibliography_info(bibliography_info))
-                st.download_button("Download PowerPoint File", ppt_file, file_name=f"{st.session_state['file_name']}.pptx")
             elif download_format == "Excel":
                 excel_file = download_excel(format_bibliography_info(bibliography_info))
                 st.download_button("Download Excel File", excel_file, file_name=f"{st.session_state['file_name']}.xlsx")
